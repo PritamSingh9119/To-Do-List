@@ -1,0 +1,110 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.outer-box{
+    margin: 20px;
+    width: 30% auto;
+    height: 100% auto;
+    background-color:khaki;
+    z-index: 0;
+}
+
+.inner-box{
+    margin: 15px;
+    margin-top: 20px;
+    min-height: 500px;
+    height:fit-content;
+    width: 500px;
+    border-radius: 7px;
+    background-color:wheat;
+    z-index: 1;
+    padding-bottom: 7px;
+    border: 1px solid black;
+}
+
+#div3{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.task-box{
+    margin: 10px;
+    margin-top: 15px;
+    padding-left: 65px;
+    padding-right: 65px;
+    height: 45px;
+    width: 80%;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: khaki;
+    z-index: 2;
+    position: relative;
+
+}
+
+.img1,.img2{
+    margin-top: 5px;
+    position: absolute;
+    height:35px;
+    z-index: 3;
+}
+
+
+.img1{
+    left: 20px;
+    pointer-events: none;
+
+}
+
+.img2{
+   right: 20px;
+}
+
+
+#listTask{
+    width: 85%;
+    padding: 0;
+    list-style-type:decimal; 
+    margin: 25px;
+    margin-left: 40px;
+}
+
+#listTask li{
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+li .tickIcon-class, .xIcon-class{
+    /* position: absolute; */
+    float: inline-end;
+    /* top:0; */
+    /* right: 0; */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: -5px;
+    /* color:red; */
+}
+
+.tickIcon-div, .xIcon-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#taskCount{
+margin-left: 15px;
+}
